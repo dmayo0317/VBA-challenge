@@ -43,8 +43,7 @@ Sub Yearly_Stock()
   
     'Start holdig the first opening in the data
   
-    
-    ' Check if we are still within the same credit card brand, if it is not...
+  ' Check if we are still within the same ticker name, if it is not...
     If nextRow <> currentRow Then
     
       ' Set the Ticker name, opening price and closing price'
@@ -64,9 +63,7 @@ Sub Yearly_Stock()
         
         'Hold the percent Change in the summary table'
             Range("K" & Summary_Table_Row).Value = DeltaChangePercent
-        End If
-              
-      'Hold the percent Change in the summary table'
+        End If  
       Range("K" & Summary_Table_Row).Value = DeltaChangePercent
        
     'Change the color of the cell based on the percent (forloop Condition Check)'
